@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:display=swap');
 
 /* ------------- *
  *   CSS RESET   *
@@ -37,9 +37,54 @@ html {
 }
 
 body {
+    display: grid;
+    place-items: center;
+    background-color: var(--tertiary-bg-col);
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.advice-container {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    max-width: 29rem;
+    padding: 3rem;
+    border-radius: 1rem;
     background-color: var(--primary-bg-col);
 }
 
+.advice-container h3 {
+    letter-spacing: 0.15rem;
+    color: var(--neon-green);
+}
+
+.advice-container .button {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    transform: translateY(50%);
+    background-color: var(--neon-green);
+}
+
+.button img {
+    max-width: 4rem;
+    padding: 1rem;
+}
+
+.advice-container > img {
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
 .quote {
-    font-size: 2.8rem;
+    color: var(--light-cyan);
+    font-size: 2rem;
 }
