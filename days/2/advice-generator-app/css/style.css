@@ -48,6 +48,14 @@ p {
     overflow-wrap: break-word;
 }
 
+p::before {
+    content: open-quote;
+}
+
+p::after {
+    content: close-quote;
+}
+
 .advice-container {
     display: flex;
     gap: 2rem;
@@ -60,7 +68,7 @@ p {
     background-color: var(--primary-bg-col);
 }
 
-.advice-container h3 {
+.advice-container > h3 {
     letter-spacing: 0.15rem;
     color: var(--neon-green);
 }
@@ -72,9 +80,15 @@ p {
     border-radius: 50%;
     transform: translateY(50%);
     background-color: var(--neon-green);
+    transition: 0.25s;
 }
 
-.button img {
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2.5rem var(--neon-green);
+}
+
+.button > img {
     max-width: 4rem;
     padding: 1rem;
 }
