@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 /* ------------- *
  *   CSS RESET   *
  * ------------- */
@@ -23,6 +22,7 @@ html, body {
     /* Other colors */
     --light-cyan: hsl(193, 38%, 86%);
     --neon-green: hsl(150, 100%, 66%);
+    --neon-green-darker: hsl(150, 56%, 46%);
 }
 
 * {
@@ -62,15 +62,10 @@ p::after {
     flex-direction: column;
     position: relative;
     align-items: center;
-    max-width: 29rem;
+    max-width: 40rem;
     padding: 3rem;
     border-radius: 1rem;
     background-color: var(--primary-bg-col);
-}
-
-.advice-container > h3 {
-    letter-spacing: 0.15rem;
-    color: var(--neon-green);
 }
 
 .advice-container .button {
@@ -83,9 +78,18 @@ p::after {
     transition: 0.25s;
 }
 
+.advice-number {
+    letter-spacing: 0.15rem;
+    color: var(--neon-green);
+}
+
 .button:hover {
     cursor: pointer;
     box-shadow: 0 0 2.5rem var(--neon-green);
+}
+
+.button:active {
+    box-shadow: 0 0 1.5rem var(--neon-green-darker);
 }
 
 .button > img {

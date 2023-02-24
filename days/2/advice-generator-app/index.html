@@ -6,14 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <script src="./scripts/advice-generator.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                getRandomAdvice()
+            })
+        </script>
         <title>Advice Generator</title>
     </head>
     <body>
         <div class="advice-container">
-            <h3>ADVICE # 1</h3>
-            <p class="quote">Somethasdasdasdasdadasdasdaing</p>
+            <h3 class="advice-number">Waiting...</h3>
+            <p class="quote">Loading piece of advice...</p>
             <img src="./images/pattern-divider-desktop.svg" alt="">
-            <div class="button">
+            <div class="button" onclick="getRandomAdvice()">
                 <img src="./images/icon-dice.svg" alt="">
             </div>
         </div>
