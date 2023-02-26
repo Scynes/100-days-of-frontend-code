@@ -114,7 +114,7 @@ p {
     background-color: var(--light-grey);
 }
 
-.circle-content:not(.star):hover {
+.circle-content:not(.star, .active):hover {
     cursor: pointer;
     background-color: var(--primary-col);
 }
