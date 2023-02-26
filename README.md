@@ -8,9 +8,6 @@ Every day, I will be creating a project that incorporates JavaScript, HTML, and 
 ## Demo
 ___
 To view my progress and completed projects, simply click on the "View 100 Projects" below to access project data and relevant demo pages! I also have a [index page that a page](https://example.com) hosts all my projects in order of the days they were made. 
-
-<details>
-  <summary>View 100 Projects</summary>
   
 ## Day
 
@@ -26,8 +23,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/3/interactive-rating-component/)
      * Purpose: A rating component that allows a user to select a feed back rating and be informed of their selection.
      * Thoughts: Great practice run of DOM manipulation and JS event listeners.
-
-</details>
+  4. **Plan Pricing Component**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/4/plan-pricing-component/)
+     * Purpose: A pricing component you usually find on websites such as web hosting! Display plan options in a UX friendly design.
+     * Thoughts: A good test of dynamic layout using grid/flexbox.
 
 ## Goal
 ___
