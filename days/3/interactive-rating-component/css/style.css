@@ -161,3 +161,25 @@ p {
     margin: 0 1rem;
     line-height: 2.4;
 }
+
+@media (max-width: 480px) {
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    .circle-content {
+        height: 5rem;
+        width: 5rem;
+        font-size: 2rem;
+    }
+
+    .submit-rating-button {
+        border-radius: 3rem;
+        height: 5rem;
+    }
+
+    .feedback-container {
+        max-width: 30rem;
+    }
+}
