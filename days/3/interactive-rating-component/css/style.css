@@ -54,6 +54,10 @@ html, body {
     border: none !important;
 }
 
+.hidden {
+    display: none !important;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
@@ -126,10 +130,6 @@ p {
     padding: 2.5rem;
     border-radius: 2rem;
     background-color: var(--dark-blue);
-}
-
-.rating-submit {
-    display: none;
 }
 
 .rating-thanks {
