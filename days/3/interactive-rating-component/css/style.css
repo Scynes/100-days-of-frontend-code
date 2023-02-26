@@ -128,11 +128,34 @@ p {
     background-color: var(--dark-blue);
 }
 
-.rating-thanks {
+.rating-submit {
     display: none;
+}
+
+.rating-thanks {
+    align-items: center;
+}
+
+.rating-thanks > img {
+    max-width: 10rem;
+}
+
+.rating-thanks > div > p {
+    font-weight: var(--font-med-weight);
 }
 
 .rating-selection {
     display: flex;
     justify-content: space-between;
+}
+
+.selected {
+    border-radius: 2rem;
+    background-color: var(--medium-grey-opaque);
+}
+
+.selected p {
+    color: var(--primary-col);
+    margin: 0 1rem;
+    line-height: 2.4;
 }
