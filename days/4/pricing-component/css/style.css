@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* ------------- *
  *   CSS Reset   *
  * ------------- */
@@ -18,10 +20,17 @@ html, body {
  *   GLOBAL   *
  * ---------- */
 :root {
-    /* background colors */
-
+    /* gradient colors */
+    --primary-gradient-right: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    --primary-gradient-bottom: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     /* other colors */
+    --grayish-blue: hsl(233, 13%, 49%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
     --white-col: white;
+    /* font */
+    --primary-font-family: 'Montserrat', sans-serif;
 }
 
 /* ----------- *
@@ -46,3 +55,10 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+* {
+    font-family: var(--primary-font-family);
+}
+
+p {
+    font-size: 1.5rem;
+}
