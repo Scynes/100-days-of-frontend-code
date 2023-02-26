@@ -120,13 +120,16 @@ div:is(.switch) > label > input[type="checkbox"]:checked + .ball {
     justify-content: center;
     gap: 3rem;
     height: 100%;
+    width: 100%;
 }
 
 .pricing-plans {
     display: flex;
     align-items: center;
+    justify-content: center;
     max-height: 44rem;
     height: 100%;
+    width: 100%;
 }
 
 .pricing-toggle {
@@ -143,6 +146,7 @@ div:is(.switch) > label > input[type="checkbox"]:checked + .ball {
     padding: 2rem;
     max-height: 40rem;
     height: 100%;
+    width: 100%;
 }
 
 .plan-container:not(.active) > .plan {
@@ -198,10 +202,6 @@ button {
     cursor: pointer;
 }
 
-.plan-container {
-    height: 100%;
-}
-
 .plan-header > h2 {
     margin-bottom: 2rem;
 }
@@ -213,6 +213,9 @@ button {
 .plan-container {
     display: grid;
     place-items: center;
+    max-width: 30rem;
+    height: 100%;
+    width: 100%;
 }
 
 .active.plan-container {

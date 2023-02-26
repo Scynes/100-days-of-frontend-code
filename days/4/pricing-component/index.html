@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./scripts/toggle-pricing.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pricing Plan Component</title>
     </head>
@@ -12,9 +13,9 @@
             <h1>Our Pricing</h1>
             <div class="pricing-toggle">
                 Annually 
-                <div class="switch borderless bg-input-col border-radius-full">
+                <div class="switch borderless">
                     <label>
-                        <input class="width-100" type="checkbox" name="private">
+                        <input id="pricing-toggle" class="width-100" type="checkbox" name="private">
                         <div class="ball pointer"></div>
                     </label>
                 </div>
