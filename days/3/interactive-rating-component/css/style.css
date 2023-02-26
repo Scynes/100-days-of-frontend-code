@@ -25,9 +25,10 @@ html, body {
     --white-col: white;
     /* other colors */
     --dark-blue: hsl(213, 19%, 18%);
-    --vary-dark-blue: hsl(216, 12%, 8%);
+    --very-dark-blue: hsl(216, 12%, 8%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
+    --medium-grey-opaque: hsl(216, 12%, 54%, 0.2);
     /* font */
     --primary-font-family: 'Overpass', sans-serif;
     --font-mid-weight: 400;
@@ -56,6 +57,60 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--very-dark-blue);
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-family: var(--primary-font-family);
+}
+
 p {
+    color: var(--medium-grey);
+    font-size: 1.25rem;
+    font-family: var(--primary-font-family);
+    font-weight: var(--font-mid-weight);
+}
+
+.submit-rating-button {
+    height: 4rem;
+    border-radius: 2rem;
+    background-color: var(--primary-col);
+}
+
+.circle-content {
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
     font-size: 1.5rem;
+    color: var(--white-col);
+    background-color: var(--medium-grey-opaque);
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 27rem;
+}
+
+.rating-container {
+    padding: 2.5rem;
+    border-radius: 2rem;
+    background-color: var(--dark-blue);
+}
+
+.rating-thanks {
+    display: none;
+}
+
+.rating-selection {
+    display: flex;
+    justify-content: space-between;
 }
