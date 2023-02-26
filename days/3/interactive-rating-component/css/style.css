@@ -65,39 +65,61 @@ body {
 
 h1 {
     margin-bottom: 0.5rem;
+
+    color: var(--white-col);
     font-size: 2rem;
+    font-weight: var(--font-med-weight);
     font-family: var(--primary-font-family);
 }
 
 p {
     color: var(--medium-grey);
-    font-size: 1.25rem;
+    line-height: 1.75;
+    font-size: 1.1rem;
     font-family: var(--primary-font-family);
-    font-weight: var(--font-mid-weight);
+    font-weight: var(--font-large-weight);
 }
 
 .submit-rating-button {
-    height: 4rem;
+    height: 3.5rem;
     border-radius: 2rem;
+    color: var(--white-col);
     background-color: var(--primary-col);
+    transition: 0.25s;
+}
+
+.submit-rating-button:hover {
+    cursor: pointer;
+    color: var(--primary-col);
+    background-color: var(--white-col);
 }
 
 .circle-content {
     display: grid;
     place-items: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     font-size: 1.5rem;
     color: var(--white-col);
     background-color: var(--medium-grey-opaque);
+    transition: 0.4s;
+}
+
+.circle-content.active {
+    background-color: var(--light-grey);
+}
+
+.circle-content:not(.star):hover {
+    cursor: pointer;
+    background-color: var(--primary-col);
 }
 
 .feedback-container {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    max-width: 27rem;
+    max-width: 25rem;
 }
 
 .rating-container {
