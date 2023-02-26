@@ -52,6 +52,10 @@ html, body {
     border: none !important;
 }
 
+.hidden {
+    display: none;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
@@ -184,6 +188,14 @@ button:hover {
     color: var(--dark-grayish-blue);
     border: 1px solid;
     background: rgba(255, 255, 255, 0);
+}
+
+button {
+    transition: 0.25s;
+}
+
+.ball:hover {
+    cursor: pointer;
 }
 
 .plan-container {
