@@ -60,6 +60,8 @@ html, body {
 }
 
 body {
+    display: grid;
+    place-items: center;
     background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
     background-position: bottom left, top right;
     background-repeat: no-repeat;
@@ -67,4 +69,8 @@ body {
 
 p {
     font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
