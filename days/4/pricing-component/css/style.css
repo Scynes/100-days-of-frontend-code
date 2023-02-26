@@ -59,6 +59,12 @@ html, body {
     font-family: var(--primary-font-family);
 }
 
+body {
+    background-image: url(../images/bg-bottom.svg), url(../images/bg-top.svg);
+    background-position: bottom left, top right;
+    background-repeat: no-repeat;
+}
+
 p {
     font-size: 1.5rem;
 }
