@@ -74,3 +74,60 @@ p {
 h1 {
     font-size: 3rem;
 }
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(167, 157, 157), rgba(0, 0, 0, 0));
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100%;
+}
+
+.pricing-plans {
+    display: flex;
+    align-items: center;
+    max-height: 44rem;
+    height: 100%;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    max-height: 40rem;
+    height: 100%;
+}
+
+.plan > button {
+    width: 100%;
+    min-height: 4rem;
+}
+
+.plan-header > h2 {
+    margin-bottom: 2rem;
+}
+
+.large-price {
+    font-size: 5rem;
+}
+
+.active.plan {
+    max-height: 45rem;
+    border-radius: 1rem;
+    color: var(--white-col);
+    background: var(--primary-gradient-bottom);
+}
+
+.active > hr {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+}
