@@ -1,0 +1,48 @@
+/* ------------- *
+ *   CSS Reset   *
+ * ------------- */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ---------- *
+ *   GLOBAL   *
+ * ---------- */
+:root {
+    /* background colors */
+
+    /* other colors */
+    --white-col: white;
+}
+
+/* ----------- *
+ *   UTILITY   *
+ * ----------- */
+.height-full {
+    height: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+/* --------------- *
+ *   APPLICATION   *
+ * --------------- */
