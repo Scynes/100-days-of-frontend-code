@@ -55,3 +55,13 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+header {
+    display: grid;
+    background: url(../images/bg-pattern-intro-desktop.svg) no-repeat left 25% center, var(--red-gradient);
+    height: clamp(20rem, 100%, 50rem);
+    background-size: 225%, 100%;
+}   
+
+nav {
+    display: flex;
+}
