@@ -18,10 +18,19 @@ html, body {
  *   GLOBAL   *
  * ---------- */
 :root {
-    /* background colors */
-
+    /* gradients */
+    --red-gradient: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --blue-gradient: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    /* cta colors */
+    --light-red-cta: hsl(356, 100%, 66%);
+    --very-light-red-cta: hsl(355, 100%, 74%);
+    --very-dark-blue-cta: hsl(208, 49%, 24%);
     /* other colors */
     --white-col: white;
+    /* font */
+    --grayish-blue: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --very-dark-black-blue: hsl(240, 10%, 16%);
 }
 
 /* ----------- *
@@ -46,3 +55,6 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+body {
+    
+}
