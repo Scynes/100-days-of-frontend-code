@@ -55,13 +55,82 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+h1 {
+    color: var(--white-col);
+    font-size: clamp(2rem, 3rem, 4rem);
+    line-height: 0;
+}
+
+h2 {
+    color: var(--white-col);
+}
+
 header {
     display: grid;
+    place-items: center;
+    grid-template-rows: auto 1fr;
+    height: clamp(20rem, 100%, 40rem);
+    border-bottom-left-radius: 8rem;
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat left 25% center, var(--red-gradient);
-    height: clamp(20rem, 100%, 50rem);
     background-size: 225%, 100%;
 }   
 
 nav {
     display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: clamp(10rem, 100%, 78%);
+}
+
+p {
+    font-size: 1.6rem;
+    opacity: 0.65;
+    color: var(--white-col);
+}
+
+button {
+    min-height: 3.75rem;
+    max-width: 12rem;
+    width: 100%;
+    border: none;
+    border-radius: 3rem;
+}
+
+button.primary {
+    color: var(--white-col);
+
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: clamp(4rem, 100%, 24rem);
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-items > img {
+    margin-right: 3.5rem;
+}
+
+.nav-item {
+    opacity: 0.65;
+}
+
+.nav-item > h2::after {
+    content: url(../images/icon-arrow-light.svg);
+    margin-left: 0.5rem;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
