@@ -27,6 +27,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/4/plan-pricing-component/)
      * Purpose: A pricing component you usually find on websites such as web hosting! Display plan options in a UX friendly design.
      * Thoughts: A good test of dynamic layout using grid/flexbox.
+  5. **Header Nav Component**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/5/header-nav-component/)
+     * Purpose: A responsive header and navigaiton combination component. Great for blogs!
+     * Thoughts: This was a challenging exercise for toggline navigation components!
 
 ## Goal
 ___

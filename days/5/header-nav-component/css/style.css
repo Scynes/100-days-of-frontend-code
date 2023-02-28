@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+
 /* ------------- *
  *   CSS Reset   *
  * ------------- */
@@ -55,25 +57,47 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background: var(--blue-gradient);
+}
+
 h1 {
     color: var(--white-col);
-    font-size: clamp(2rem, 3rem, 4rem);
-    line-height: 0;
+    font-size: clamp(3rem, 4.5vw, 5rem);
+    line-height: 1;
+}
+
+h1.primary {
+    font-size: 3rem;
+    color: var(--very-dark-blue-cta);
 }
 
 h2 {
     color: var(--white-col);
 }
 
+h2.primary {
+    font-size: 2rem;
+    color: var(--very-dark-blue-cta);
+}
+
 header {
     display: grid;
     place-items: center;
     grid-template-rows: auto 1fr;
-    height: clamp(20rem, 100%, 40rem);
+    height: clamp(20rem, 100%, 50rem);
     border-bottom-left-radius: 8rem;
     background: url(../images/bg-pattern-intro-desktop.svg) no-repeat left 25% center, var(--red-gradient);
     background-size: 225%, 100%;
-}   
+}
+
+main {
+    display: grid;
+}
 
 nav {
     display: flex;
@@ -82,23 +106,45 @@ nav {
     width: clamp(10rem, 100%, 78%);
 }
 
+nav > img {
+    margin-right: 4rem;
+}
+
 p {
     font-size: 1.6rem;
     opacity: 0.65;
     color: var(--white-col);
 }
 
+p.secondary {
+    color: var(--very-dark-black-blue);
+}
+
+section {
+    height: auto;
+}
+
 button {
+    cursor: pointer;
     min-height: 3.75rem;
     max-width: 12rem;
     width: 100%;
     border: none;
     border-radius: 3rem;
+    transition: 0.25s;
 }
 
-button.primary {
-    color: var(--white-col);
+button.primary, button.secondary:hover {
+    color: var(--light-red-cta);
+    opacity: 1;
+    background-color: var(--white-col);
+}
 
+button.secondary, button.primary:hover {
+    opacity: 0.95;
+    color: var(--white-col);
+    border: 1px solid;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .button-group {
@@ -108,10 +154,25 @@ button.primary {
     width: clamp(4rem, 100%, 24rem);
 }
 
+.nav-items-container-desktop {
+    display: flex;
+    width: 100%;
+}
+
+.nav-items-container-mobile {
+    display: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
 .nav-items {
     display: flex;
     align-items: center;
     gap: 3rem;
+    width: 100%;
 }
 
 .nav-items > img {
@@ -133,4 +194,44 @@ button.primary {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+}
+
+
+@media (max-width: 740px) {
+
+    .nav-items-container-mobile.active {
+        display: flex;
+    }
+
+    header {
+        grid-template-rows: auto;
+        height: auto;
+    }
+
+    .hamburger {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-items-container-desktop {
+        display: none;
+    }
+
+    .nav-items-container-mobile {
+        margin-top: 2.75rem;
+        display: hidden;
+        align-items: center;
+        background: var(--blue-gradient);
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .nav-items {
+        flex-direction: column;
+    }
+
+    .intro {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
 }

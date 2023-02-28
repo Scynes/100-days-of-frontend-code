@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <script>
+
+            const handleHamburgerClick = () => {
+
+                const MOBILE_NAV = document.querySelector('.nav-items-container-mobile');
+
+                const HAMBURGER_ICON = document.querySelector('.hamburger .icon');
+                
+                HAMBURGER_ICON.classList.toggle('active');
+
+                HAMBURGER_ICON.src = HAMBURGER_ICON.classList.contains('active') ? './images/icon-close.svg' : './images/icon-hamburger.svg';
+
+                MOBILE_NAV.classList.toggle('active');
+            }
+
+        </script>
+        <title>Blogr Landing Page</title>
+    </head>
+    <body>
+        <header class="width-full">
+            <nav>
+                <img src="./images/logo.svg" alt="" srcset="">
+                <div class="hamburger" onclick="handleHamburgerClick()">
+                    <img class="icon" src="./images/icon-hamburger.svg" alt="">
+                </div>
+                <div class="nav-items-container-desktop">
+                    <div class="nav-items">
+                        <div class="nav-item">
+                            <h2>Product</h2>
+                        </div>
+                        <div class="nav-item">
+                            <h2>Company</h2>
+                        </div>
+                        <div class="nav-item">
+                            <h2>Connect</h2>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button class="secondary borderless">Login</button>
+                        <button class="primary">Sign Up</button>
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-items-container-mobile">
+                <div class="nav-items">
+                    <div class="nav-item">
+                        <h2>Product</h2>
+                    </div>
+                    <div class="nav-item">
+                        <h2>Company</h2>
+                    </div>
+                    <div class="nav-item">
+                        <h2>Connect</h2>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button class="secondary borderless">Login</button>
+                    <button class="primary">Sign Up</button>
+                </div>
+            </div>
+            <div class="intro">
+                <h1 class="text-center">A modern publishing platform</h1>
+                <p>Grow your audiance and build your online brand</p>
+                <div class="button-group">
+                    <button class="primary">Start for Free</button>
+                    <button class="secondary">Learn More</button>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
