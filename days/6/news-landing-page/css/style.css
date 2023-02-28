@@ -77,11 +77,19 @@ html, body {
     align-items: space-between;
 }
 
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
 /* -------- *
  *   GRID   *
  * -------- */
 .grid {
     display: grid;
+}
+
+.grid.place-center {
+    place-items: center;
 }
 
 /* --------------- *
@@ -95,9 +103,44 @@ html, body {
     justify-content: center;
 }
 
+.gap-small:is(.flex, .grid) {
+    gap: 2rem;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 p {
     font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: initial;
+}
+
+header {
+    padding: 2rem 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: clamp(30rem, 100%, 85%);
+    height: clamp(30rem, 100%, 80%);
+}
+
+.nav-link {
+    color: var(--dark-grayish-blue-col);
+    text-decoration: none;
+    font-weight: var(--font-weight-small);
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+}
+
+.nav-link:hover {
+    color: var(--secondary-red-col);
 }
