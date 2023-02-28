@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
 /* ------------- *
  *   CSS Reset   *
  * ------------- */
@@ -18,10 +20,19 @@ html, body {
  *   GLOBAL   *
  * ---------- */
 :root {
-    /* background colors */
-
+    /* main colors */
+    --primary-orange-col: hsl(35, 77%, 62%);
+    --secondary-red-col: hsl(5, 85%, 63%);
     /* other colors */
     --white-col: white;
+    --off-white-col: hsl(36, 100%, 99%);
+    --grayish-blue-col: hsl(233, 8%, 79%);
+    --dark-grayish-blue-col: hsl(236, 13%, 42%);
+    --very-dark-blue-col: hsl(240, 100%, 5%);
+    /* fonts */
+    --font-weight-small: 400;
+    --font-weight-med: 700;
+    --font-weight-large: 800;
 }
 
 /* ----------- *
@@ -87,3 +98,6 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+p {
+    font-size: 1.5rem;
+}
