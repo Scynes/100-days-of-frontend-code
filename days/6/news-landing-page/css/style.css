@@ -116,6 +116,7 @@ html, body {
 
 p {
     font-size: 1.5rem;
+    color: var(--grayish-blue-col);
 }
 
 h1 {
@@ -123,18 +124,31 @@ h1 {
     font-family: initial;
 }
 
+h3 {
+    font-size: 4rem;
+    color: var(--primary-orange-col);
+}
+
+h4 {
+    font-size: 2rem;
+    color: var(--off-white-col);
+}
+
 header {
-    padding: 2rem 0;
+    grid-column: span 3;
 }
 
 .content-container {
-    display: flex;
-    flex-direction: column;
-    width: clamp(30rem, 100%, 85%);
-    height: clamp(30rem, 100%, 80%);
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 10rem 10rem;
+    width: clamp(30rem, 100%, 100%);
+    height: clamp(30rem, 100%, 100%);
+    grid-template: auto auto 1fr 1fr / 1fr 1fr minmax(auto, 350px);
 }
 
 .nav-link {
+    transition: 0.3s;
     color: var(--dark-grayish-blue-col);
     text-decoration: none;
     font-weight: var(--font-weight-small);
@@ -142,5 +156,28 @@ header {
 }
 
 .nav-link:hover {
+    transform: scale(1.2);
     color: var(--secondary-red-col);
+}
+
+.featured-article {
+    max-height: 25rem;
+    min-width: 40rem;
+    grid-column: span 2;
+}
+
+.featured-article > img {
+    object-fit: cover;
+}
+
+.new-articles {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    grid-row: span 2;
+    background-color: var(--very-dark-blue-col);
+}
+
+.top-articles {
+    grid-column: span 3;
 }
