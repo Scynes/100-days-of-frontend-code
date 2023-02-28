@@ -29,6 +29,7 @@ html, body {
     --grayish-blue-col: hsl(234, 8%, 55%);
     --dark-grayish-blue-col: hsl(236, 13%, 42%);
     --very-dark-blue-col: hsl(240, 100%, 5%);
+    --dark-blue-col: hsl(240, 45%, 30%);
     /* fonts */
     --font-weight-small: 400;
     --font-weight-med: 700;
@@ -168,10 +169,20 @@ button.primary:hover {
     gap: 1rem;
     flex-direction: column;
     justify-content: center;
+    transition: 0.25s;
 }
 
 .article:not(:last-child) {
-    border-bottom: 1px solid var(--dark-grayish-blue-col);
+    border-bottom: 2px solid var(--dark-grayish-blue-col);
+}
+
+.article:hover {
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-bottom: 2px solid var(--dark-grayish-blue-col);
+    background-color: var(--dark-blue-col);
 }
 
 .content-container {
@@ -233,7 +244,14 @@ button.primary:hover {
     gap: 2rem;
     max-height: 15rem;
     grid-template-columns: 2fr 4fr;
+    transition: 0.25s;
+}
 
+.top-article:hover {
+    cursor: pointer;
+    background-color: hsla(5, 85%, 63%, 0.25);
+    border-radius: 1rem;
+    transform: scale(1.1);
 }
 
 .top-article > img {
