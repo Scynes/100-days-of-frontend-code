@@ -194,11 +194,11 @@ button.primary:hover {
 
 .featured-article {
     grid-column: span 2;
-    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .featured-article > * {
-    flex: 1 0 50%;
+    flex: 1;
 }
 
 .featured-article > h1 {
@@ -229,4 +229,12 @@ button.primary:hover {
 
 .top-articles {
     grid-column: span 3;
+}
+
+.top-article {
+    display: flex;
+}
+
+.top-article > .description {
+    flex-grow: 1;
 }
