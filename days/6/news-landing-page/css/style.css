@@ -26,7 +26,7 @@ html, body {
     /* other colors */
     --white-col: white;
     --off-white-col: hsl(36, 100%, 99%);
-    --grayish-blue-col: hsl(233, 8%, 79%);
+    --grayish-blue-col: hsl(234, 8%, 55%);
     --dark-grayish-blue-col: hsl(236, 13%, 42%);
     --very-dark-blue-col: hsl(240, 100%, 5%);
     /* fonts */
@@ -116,6 +116,7 @@ html, body {
 
 p {
     font-size: 1.5rem;
+    line-height: 1.5;
     color: var(--grayish-blue-col);
 }
 
@@ -130,12 +131,43 @@ h3 {
 }
 
 h4 {
+
     font-size: 2rem;
     color: var(--off-white-col);
 }
 
 header {
     grid-column: span 3;
+}
+
+button {
+    cursor: pointer;
+}
+
+button.primary {
+    min-height: 5rem;
+    max-width: 50%;
+    border: none;
+    transition: background-color 0.3s;
+    letter-spacing: 0.25rem;
+    color: var(--white-col);
+    background-color: var(--secondary-red-col);
+}
+
+button.primary:hover {
+    background-color: var(--very-dark-blue-col);
+}
+
+.article {
+    flex-grow: 1;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.article:not(:last-child) {
+    border-bottom: 1px solid var(--dark-grayish-blue-col);
 }
 
 .content-container {
@@ -161,12 +193,29 @@ header {
 }
 
 .featured-article {
+    grid-column: span 2;
+    flex-wrap: wrap;
+}
+
+.featured-article > * {
+    flex: 1 0 50%;
+}
+
+.featured-article > h1 {
+    font-size: clamp(4rem, 4vw, 6rem);
+}
+
+.featured-article > * > p, button.primary {
+    font-size: clamp(1.5rem, 1.25vw, 2.2rem);
+}
+
+.featured-article-image {
     max-height: 25rem;
     min-width: 40rem;
     grid-column: span 2;
 }
 
-.featured-article > img {
+.featured-article-image > img {
     object-fit: cover;
 }
 
