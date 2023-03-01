@@ -31,6 +31,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/5/header-nav-component/)
      * Purpose: A responsive header and navigaiton combination component. Great for blogs!
      * Thoughts: This was a challenging exercise for toggline navigation components!
+  6. **News Landing Page**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/6/news-landing-page/)
+     * Purpose: A representation of what a landing page for a news website could look like!
+     * Thoughts: great practice on layout design with both flex and grid.
 
 ## Goal
 ___
