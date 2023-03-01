@@ -270,3 +270,50 @@ button.primary:hover {
     font-size: 2rem;
     color: var(--dark-grayish-blue-col);
 }
+
+@media (max-width: 870px) {
+
+    .content-container {
+        padding: 1rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured-article-image {
+        min-width: 10rem;
+        order: 0;
+        height: 100%;
+    }
+
+    .featured-article {
+        display: flex;
+        flex-direction: column;
+        order: 0;
+    }
+
+    .featured-article > h1 {
+        font-size: 5rem;
+    }
+
+    .featured-article > div {
+        gap: 3rem;
+    }
+
+    .article {
+        min-height: 15rem;
+    }
+
+    .new-articles {
+        order: 1;
+    }
+
+    .top-article {
+        order: 4;
+    }
+
+    .top-article:hover {
+        transform: scale(1);
+    }
+}
