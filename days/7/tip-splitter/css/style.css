@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* ------------- *
+ *   CSS Reset   *
+ * ------------- */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ---------- *
+ *   GLOBAL   *
+ * ---------- */
+:root {
+    /* main colors */
+    --primary-strong-cyan: hsl(172, 67%, 45%);
+    /* other colors */
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white-col: white;
+}
+
+/* ----------- *
+ *   UTILITY   *
+ * ----------- */
+.height-full {
+    height: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.outlineless {
+    outline: none;
+}
+
+/* -------- *
+ *   FLEX   *
+ * -------- */
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.grow-1 {
+    flex-grow: 1;
+}
+
+.flex.align-space-between {
+    align-items: space-between;
+}
+
+/* -------- *
+ *   GRID   *
+ * -------- */
+.grid {
+    display: grid;
+}
+
+/* --------------- *
+ *   FLEX / GRID   *
+ * --------------- */
+.align-center:is(.flex, .grid) {
+    align-items: center;
+}
+
+.justify-center:is(.flex, .grid) {
+    justify-content: center;
+}
+
+/* --------------- *
+ *   APPLICATION   *
+ * --------------- */
+* {
+    font-family: 'Space Mono', monospace;
+}
+
+input {
+    font-size: 2.4rem;
+}
