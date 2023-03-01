@@ -22,6 +22,7 @@ html, body {
 :root {
     /* main colors */
     --primary-strong-cyan: hsl(172, 67%, 45%);
+    --primary-strong-cyan-light: hsl(172, 49%, 69%);
     /* other colors */
     --very-dark-cyan: hsl(183, 100%, 15%);
     --dark-grayish-cyan: hsl(186, 14%, 43%);
@@ -107,11 +108,13 @@ body {
 }
 
 button {
+    cursor: pointer;
     min-height: 4rem;
     font-size: 1.8rem;
     font-weight: 700;
     border: none;
     border-radius: 0.5rem;
+    transition: 0.3s;
     color: var(--very-dark-cyan);
     background-color: var(--very-light-grayish-cyan);
 }
@@ -136,7 +139,7 @@ input:focus {
     box-shadow: 0 0 0 2px var(--primary-strong-cyan);
 }
 
-input[type="text"] {
+input[type="text"]:not(.custom) {
     padding-right: 1.5rem;
     text-align: right;
     background-color: var(--very-light-grayish-cyan);
@@ -166,13 +169,18 @@ label {
     gap: 1.5rem;
 }
 
-.button-container button {
+.button-container :is(button, div > input) {
     flex-basis: calc((100% - 3rem) / 3);
 }
 
 .button-container button:not(:last-child) {
-    color: var(--white-col);
+    color: var(--primary-strong-cyan-light);
     background-color: var(--very-dark-cyan);
+}
+
+.button-container button:hover {
+    color: var(--very-dark-cyan);
+    background-color: var(--primary-strong-cyan-light)
 }
 
 .content-container {
@@ -208,6 +216,10 @@ label {
     background-color: var(--primary-strong-cyan);
 }
 
+.tip-calc-results > button:hover {
+    background-color: var(--primary-strong-cyan-light);
+}
+
 .info {
     display: flex;
     align-items: center;
@@ -216,6 +228,7 @@ label {
 
 .info :is(h1) {
     font-size: 3.5rem;
+    color: var(--primary-strong-cyan);
 }
 
 .per-person {
@@ -236,7 +249,7 @@ label {
         justify-content: flex-start !important;
     }
 
-    .button-container button {
+    .button-container :is(button, div > input) {
         flex-basis: calc((100% - 1.5rem) / 2);
     }
 
