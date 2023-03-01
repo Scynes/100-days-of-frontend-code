@@ -70,7 +70,7 @@ html, body {
 }
 
 .flex.justify-space-between {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .flex.align-space-between {
@@ -104,6 +104,16 @@ html, body {
 
 body {
     background-color: var(--light-grayish-cyan);
+}
+
+button {
+    min-height: 4rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--very-dark-cyan);
+    background-color: var(--very-light-grayish-cyan);
 }
 
 header {
@@ -145,9 +155,24 @@ label {
     font-size: 1.5rem;
 }
 
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.button-container button {
+    flex-basis: calc((100% - 3rem) / 3);
+}
+
+.button-container button:not(:last-child) {
+    color: var(--white-col);
+    background-color: var(--very-dark-cyan);
+}
+
 .content-container {
     /* container vars */
-    --spacing: 2rem;
+    --spacing: 3rem;
     
     gap: var(--gap-spacing);
 }
@@ -169,8 +194,17 @@ label {
 
 @media (max-width: 480px) {
 
+    button {
+        font-size: 2.5rem;
+        min-height: 5rem;
+    }
+
     .content-container {
         justify-content: flex-start !important;
+    }
+
+    .button-container button {
+        flex-basis: calc((100% - 1.5rem) / 2);
     }
 
     .tip-calculator-container {
