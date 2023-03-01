@@ -27,7 +27,7 @@ html, body {
     --dark-grayish-cyan: hsl(186, 14%, 43%);
     --grayish-cyan: hsl(184, 14%, 56%);
     --light-grayish-cyan: hsl(185, 41%, 84%);
-    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --very-light-grayish-cyan: hsl(180, 71%, 93%);
     --white-col: white;
 }
 
@@ -69,6 +69,10 @@ html, body {
     flex-grow: 1;
 }
 
+.flex.justify-space-between {
+    justify-content: space-around;
+}
+
 .flex.align-space-between {
     align-items: space-between;
 }
@@ -98,6 +102,81 @@ html, body {
     font-family: 'Space Mono', monospace;
 }
 
+body {
+    background-color: var(--light-grayish-cyan);
+}
+
+header {
+    padding: 3rem;
+}
+
 input {
+    width: 100%;
+    outline: none;
     font-size: 2.4rem;
+    border-radius: 0.5rem;
+}
+
+input:focus {
+    box-shadow: 0 0 0 2px var(--primary-strong-cyan);
+}
+
+input[type="text"] {
+    padding-right: 1.5rem;
+    text-align: right;
+    background-color: var(--very-light-grayish-cyan);
+}
+
+input#bill {
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5rem center;
+}
+
+input#people {
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 1.5rem center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.content-container {
+    /* container vars */
+    --spacing: 2rem;
+    
+    gap: var(--gap-spacing);
+}
+
+.tip-calculator-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+    padding: var(--spacing);
+    width: clamp(20rem, 100%, 80rem);
+    height: clamp(10rem, 100%, 40rem);
+    border-radius: 2rem;
+    background-color: var(--white-col);
+}
+
+.tip-calculator-container :is(div) {
+    flex: 1;
+}
+
+@media (max-width: 480px) {
+
+    .content-container {
+        justify-content: flex-start !important;
+    }
+
+    .tip-calculator-container {
+        height: 100%;
+        flex-direction: column;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
