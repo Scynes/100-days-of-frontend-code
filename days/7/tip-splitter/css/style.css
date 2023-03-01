@@ -116,6 +116,11 @@ button {
     background-color: var(--very-light-grayish-cyan);
 }
 
+h3 {
+    font-size: 1.7rem;
+    color: var(--very-light-grayish-cyan);
+}
+
 header {
     padding: 3rem;
 }
@@ -190,7 +195,35 @@ label {
 
 .tip-calculator-container :is(div) {
     flex: 1;
+    flex-basis: 0;
 }
+
+.tip-calc-results {
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: var(--very-dark-cyan);
+}
+
+.tip-calc-results > button {
+    background-color: var(--primary-strong-cyan);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.info :is(h1) {
+    font-size: 3.5rem;
+}
+
+.per-person {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--dark-grayish-cyan);
+}
+
 
 @media (max-width: 480px) {
 
@@ -208,9 +241,16 @@ label {
     }
 
     .tip-calculator-container {
-        height: 100%;
-        flex-direction: column;
+        height: auto;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+    }
+
+    .bill-info {
+        min-height: 45rem;
+    }
+
+    .tip-calc-wrapper {
+        min-height: 30rem;
     }
 }
