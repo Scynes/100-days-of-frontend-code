@@ -237,6 +237,15 @@ label {
     color: var(--dark-grayish-cyan);
 }
 
+label#people-label {
+    display: inline-block;
+}
+
+label#people-error-label {
+    display: none;
+    color: red;
+}
+
 
 @media (max-width: 480px) {
 

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <script src="./scripts/bind-listeners.js" type="module" defer></script>
         <title>Splitter</title>
     </head>
     <body>
@@ -30,7 +31,10 @@
                         </div>
                     </section>
                     <section>
-                        <label for="people">Number of People:</label>
+                        <div class="flex justify-space-between">
+                            <label id="people-label" for="people">Number of People:</label>
+                            <label id="people-error-label">Can't be zero!</label>
+                        </div>
                         <input id="people" class="borderless" type="text" placeholder="0">
                     </section>
                 </div>
