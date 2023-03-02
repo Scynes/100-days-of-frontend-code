@@ -173,12 +173,12 @@ label {
     flex-basis: calc((100% - 3rem) / 3);
 }
 
-.button-container button:not(:last-child) {
+.button-container button {
     color: var(--primary-strong-cyan-light);
     background-color: var(--very-dark-cyan);
 }
 
-.button-container button:hover {
+.button-container :is(button:hover, .active) {
     color: var(--very-dark-cyan);
     background-color: var(--primary-strong-cyan-light)
 }

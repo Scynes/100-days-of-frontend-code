@@ -23,7 +23,7 @@
                         <label>Select Tip %:</label>
                         <div class="button-container">
                             <button>5%</button>
-                            <button>10%</button>
+                            <button class="active">10%</button>
                             <button>15%</button>
                             <button>25%</button>
                             <button>50%</button>
@@ -35,7 +35,7 @@
                             <label id="people-label" for="people">Number of People:</label>
                             <label id="people-error-label">Can't be zero!</label>
                         </div>
-                        <input id="people" class="borderless" type="text" placeholder="0">
+                        <input id="people" class="borderless" type="text" placeholder="1">
                     </section>
                 </div>
                 <div class="tip-calc-wrapper">
@@ -43,20 +43,20 @@
                         <section>
                             <div class="info">
                                 <div>
-                                    <h3>Tip Amount</h3>
-                                    <p class="per-person">/ person</p>
+                                    <h3>Tip Total</h3>
+                                    <p class="per-person">/ overall</p>
                                 </div>
-                                <h1>$0.00</h1>
+                                <h1>$<span id="tip-amount">0.00</span></h1>
                             </div>
                             <div class="info">
                                 <div >
-                                    <h3>Total</h3>
+                                    <h3>Tip Total</h3>
                                     <p class="per-person">/ person</p>
                                 </div>
-                                <h1>$0.00</h1>
+                                <h1>$<span id="tip-split">0.00</span></h1>
                             </div>
                         </section>
-                        <button>RESET</button>
+                        <button id="reset">RESET</button>
                     </div>
                 </div>
             </main>

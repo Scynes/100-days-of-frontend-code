@@ -1,8 +1,12 @@
 let validDollarInput = 0;
 
-let validNumberOfPeople = 0;
+let validNumberOfPeople = 1;
 
-let currentTipPercent = 0;
+let currentTipPercent = 0.1;
+
+export let tipAmount = 0.00;
+
+export let tipPerPerson = 0.00;
 
 export const validateInputAsNumber = event => {
     event.preventDefault();
@@ -20,6 +24,8 @@ export const validateInputAsNumber = event => {
         event.target.style.outline = '2px solid red'
         event.target.value = 0;
     }
+
+    calculateTip();
 }
 
 export const validateInputAsDollarAmount = event => {
@@ -32,6 +38,8 @@ export const validateInputAsDollarAmount = event => {
     } else {
         event.target.value = validDollarInput;
     }
+
+    calculateTip();
 }
 
 export const setTipPercentageWithButton = event => {
@@ -39,6 +47,8 @@ export const setTipPercentageWithButton = event => {
     const PERCENT_VALUE = parseInt(event.target.textContent) / 100;
 
     currentTipPercent = PERCENT_VALUE;
+
+    calculateTip();
 }
 
 export const setCustomTipPercentage = event => {
@@ -50,4 +60,25 @@ export const setCustomTipPercentage = event => {
     } else {
         event.target.value = currentTipPercent;
     }
+
+    calculateTip();
+}
+
+export const reset = () => {
+    validDollarInput = 0;
+
+    validNumberOfPeople = 1;
+
+    currentTipPercent = 0.1;
+
+    tipAmount = 0.00;
+
+    tipPerPerson = 0.00;
+}
+
+const calculateTip = () => {
+    tipAmount = validDollarInput * currentTipPercent;
+    tipPerPerson = tipAmount / validNumberOfPeople;
+
+    console.log(tipPerPerson);
 }
