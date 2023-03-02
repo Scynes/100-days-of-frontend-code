@@ -34,7 +34,11 @@ To view my progress and completed projects, simply click on the "View 100 Projec
   6. **News Landing Page**
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/6/news-landing-page/)
      * Purpose: A representation of what a landing page for a news website could look like!
-     * Thoughts: great practice on layout design with both flex and grid.
+     * Thoughts: Great practice on layout design with both flex and grid.
+  7. **Tip Splitter**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/7/tip-splitter)
+     * Purpose: An application to solve those instances of calculating how to split a large tip between a large group!
+     * Thoughts: Awesome practive for DOM manipulation and event listeners to dynamically change the display.
 
 ## Goal
 ___
