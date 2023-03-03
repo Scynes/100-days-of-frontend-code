@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 /* ------------- *
  *   CSS Reset   *
  * ------------- */
@@ -18,9 +20,14 @@ html, body {
  *   GLOBAL   *
  * ---------- */
 :root {
-    /* background colors */
+    /* main colors */
+    --primary-blue-col: hsl(225, 100%, 94%);
+    --secondary-bright-blue: hsl(245, 75%, 52%);
 
     /* other colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
     --white-col: white;
 }
 
@@ -87,3 +94,6 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+p {
+    font-size: 1.6rem;
+}
