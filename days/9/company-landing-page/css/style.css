@@ -113,6 +113,7 @@ body {
 }
 
 button {
+    cursor: pointer;
     width: 15rem;
     min-height: 6rem;
     border-radius: 4rem;
@@ -296,7 +297,7 @@ strong.name {
     font-family: 'Barlow', sans-serif;
 }
 
-.mobile-nav-menu {
+.mobile-nav {
     display: none;
 }
 
@@ -314,12 +315,23 @@ strong.name {
 
 @media (max-width: 480px) {
 
+    p, h1 {
+        text-align: center;
+    }
+
+    .description {
+        align-items: center;
+    }
+
     .desktop-nav {
         display: none;
     }
 
-    .mobile-nav-menu {
+    .mobile-nav {
         display: block;
     }
-    
+
+    .description-container > * {
+        width: 100%;
+    }
 }
