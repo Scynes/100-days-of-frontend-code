@@ -58,6 +58,10 @@ html {
     outline: none;
 }
 
+.position-relative {
+    position: relative;
+}
+
 /* -------- *
  *   FLEX   *
  * -------- */
@@ -261,6 +265,33 @@ strong.name {
     width: 25%;
 }
 
+.service {
+    position: absolute;
+    bottom: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.service p {
+    max-width: 35rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.service h1, p {
+    text-align: center;
+}
+
+.service h1 {
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -313,10 +344,14 @@ strong.name {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 580px) {
 
     p, h1 {
         text-align: center;
+    }
+
+    .brand-transform  {
+        flex-direction: column-reverse;
     }
 
     .description {
@@ -333,5 +368,9 @@ strong.name {
 
     .description-container > * {
         width: 100%;
+    }
+
+    .service {
+        max-width: 40rem;
     }
 }
