@@ -242,8 +242,14 @@ strong.name {
     gap: 4.5rem;
 }
 
-.social-media img {
-    width: 3rem;
+.social-media .icon {
+    cursor: pointer;
+    min-width: 3rem;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.16));
+}
+
+.social-media .icon:hover {
+    filter: hue-rotate(125deg);
 }
 
 .links {
@@ -252,6 +258,7 @@ strong.name {
 }
 
 .links a {
+    color: var(--primary-dark-desaturated-cyan);
     font-size: 2rem;
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
