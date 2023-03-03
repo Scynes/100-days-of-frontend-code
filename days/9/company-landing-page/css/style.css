@@ -223,6 +223,10 @@ strong.name {
     border-radius: 50%;
 }
 
+.images > * {
+    width: 25%;
+}
+
 @keyframes arrow {
 
     0%, 100% {
