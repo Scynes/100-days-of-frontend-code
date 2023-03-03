@@ -124,15 +124,32 @@ p {
     font-family: 'Barlow', sans-serif;
 }
 
+p.express {
+    line-height: 1.35;
+    font-size: clamp(1rem, 4.5vw, 1.75rem);
+    color: var(--dark-grayish-blue);
+}
+
 button:hover {
     color: var(--white-col);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 a.nav-item {
     color: white;
     font-size: 1.75rem;
-    text-decoration: none;
+}
+
+a.learn-more {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 4px;
 }
 
 h1.hero {
@@ -141,6 +158,12 @@ h1.hero {
     font-weight: 900;
     font-size: clamp(2rem, 4.5vw, 8rem);
     font-family: 'Fraunces', serif;
+}
+
+h1.statement {
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+    font-size: clamp(2.5rem, 4.5vw, 4.25rem);
 }
 
 strong.name {
@@ -168,13 +191,23 @@ strong.name {
     animation: arrow infinite 1.75s;
 }
 
-.description {
+.description-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.description > * {
+.description-container > * {
     width: 50%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 45rem;
+    gap: 2rem;
+    margin: 2rem;
 }
 
 .testimonials-container {
@@ -261,7 +294,6 @@ strong.name {
     color: var(--primary-dark-desaturated-cyan);
     font-size: 2rem;
     font-family: 'Barlow', sans-serif;
-    text-decoration: none;
 }
 
 @keyframes arrow {
