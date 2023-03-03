@@ -109,6 +109,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    font-family: "Fraunces",sans-serif;
 }
 
 button {
@@ -117,6 +118,10 @@ button {
     border-radius: 4rem;
     font-size: 1.65rem;
     font-family: 'Fraunces', serif;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
 }
 
 button:hover {
@@ -138,6 +143,10 @@ h1.hero {
     font-family: 'Fraunces', serif;
 }
 
+strong.name {
+    font-size: 1.8rem;
+}
+
 .header {
     height: 100vh;
     display: flex;
@@ -157,6 +166,55 @@ h1.hero {
     margin-top: 6rem;
     align-self: center;
     animation: arrow infinite 1.75s;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+}
+
+.description > * {
+    width: 50%;
+}
+
+.testimonials-container {
+    margin: 10rem 0;
+}
+
+.testimonials-container > h1 {
+    margin-bottom: 8rem;
+    font-size: clamp(2rem, 4.5vw, 4rem);
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-around;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 34rem;
+}
+
+.testimonial p {
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--very-dark-grayish-blue);
+}
+
+.testimonial p:not(.title) {
+    margin: 3rem 0;
+}
+
+.testimonial .portrait {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
 }
 
 @keyframes arrow {
