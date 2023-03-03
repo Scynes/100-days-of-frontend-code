@@ -21,7 +21,7 @@ html {
     --primary-yellow: hsl(51, 100%, 49%);
     --primary-dark-desaturated-cyan: hsl(167, 40%, 24%);
     --primary-dark-blue: hsl(198, 62%, 26%);
-    --primary-dark-moderate-cyan: hsl(168, 34%, 41%);
+    --primary-dark-moderate-cyan: hsl(168, 41%, 64%);
     /* other colors */
     --white-col: white;
     --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -225,6 +225,36 @@ strong.name {
 
 .images > * {
     width: 25%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 6rem 0;
+    background-color: var(--primary-dark-moderate-cyan);
+}
+
+.social-media {
+    display: flex;
+    gap: 4.5rem;
+}
+
+.social-media img {
+    width: 3rem;
+}
+
+.links {
+    display: flex;
+    gap: 6rem;
+}
+
+.links a {
+    font-size: 2rem;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
 }
 
 @keyframes arrow {
