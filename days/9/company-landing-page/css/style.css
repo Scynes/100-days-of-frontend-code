@@ -154,7 +154,7 @@ a.nav-item {
 }
 
 a.nav-item:hover {
-    color: var(--primary-soft-red);
+    color: var(--primary-dark-blue);
     transform: scale(1.4);
 }
 
@@ -290,7 +290,7 @@ strong.name {
     line-height: 1.4;
 }
 
-.service h1, p {
+.service h1, .service p {
     text-align: center;
 }
 
