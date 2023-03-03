@@ -296,6 +296,10 @@ strong.name {
     font-family: 'Barlow', sans-serif;
 }
 
+.mobile-nav-menu {
+    display: none;
+}
+
 @keyframes arrow {
 
     0%, 100% {
@@ -306,4 +310,16 @@ strong.name {
         transform: translateY(30px);
     }
 
+}
+
+@media (max-width: 480px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav-menu {
+        display: block;
+    }
+    
 }
