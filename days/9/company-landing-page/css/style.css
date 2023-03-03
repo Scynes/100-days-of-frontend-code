@@ -183,7 +183,8 @@ strong.name {
 
 .testimonials-container > h1 {
     margin-bottom: 8rem;
-    font-size: clamp(2rem, 4.5vw, 4rem);
+    color: var(--grayish-blue);
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
 }
 
 .testimonials {
@@ -207,8 +208,13 @@ strong.name {
     color: var(--very-dark-grayish-blue);
 }
 
+.testimonial p:is(.title) {
+    color: var(--grayish-blue);
+}
+
 .testimonial p:not(.title) {
-    margin: 3rem 0;
+    margin: 2rem 0;
+    line-height: 1.4;
 }
 
 .testimonial .portrait {
