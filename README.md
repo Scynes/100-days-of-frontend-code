@@ -43,6 +43,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/8/order-summary-component)
      * Purpose: A simple and clear order summary before proceeding to a potentail payment portal!
      * Thoughts: Sometimes simple is the best approach to making a visaully clean design.
+  8. **Company Landing Page**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/9/company-landing-page)
+     * Purpose: Build a full out landing page for a mock company. Introduct a friendly design with clear clean navigation and item representation.
+     * Thoughts: This was a really fun build. A lot to do with simple design approaches, but overall I had a blast.
 
 ## Goal
 ___

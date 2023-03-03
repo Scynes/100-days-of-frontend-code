@@ -10,6 +10,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 /* ---------- *
@@ -123,6 +124,7 @@ button {
     border-radius: 4rem;
     font-size: 1.65rem;
     font-family: 'Fraunces', serif;
+    transition: 0.3s;
 }
 
 p {
@@ -148,6 +150,12 @@ a {
 a.nav-item {
     color: white;
     font-size: 1.75rem;
+    transition: 0.3s;
+}
+
+a.nav-item:hover {
+    color: var(--primary-soft-red);
+    transform: scale(1.4);
 }
 
 a.learn-more {
