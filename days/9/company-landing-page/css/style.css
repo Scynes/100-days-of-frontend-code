@@ -12,10 +12,6 @@ html {
     font-size: 62.5%;
 }
 
-html, body {
-    height: 100%;
-}
-
 /* ---------- *
  *   GLOBAL   *
  * ---------- */
@@ -81,6 +77,10 @@ html, body {
     align-items: space-between;
 }
 
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
 /* -------- *
  *   GRID   *
  * -------- */
@@ -99,6 +99,74 @@ html, body {
     justify-content: center;
 }
 
+.gap-med:is(.flex, .grid) {
+    gap: 3rem;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 15rem;
+    min-height: 6rem;
+    border-radius: 4rem;
+    font-size: 1.65rem;
+    font-family: 'Fraunces', serif;
+}
+
+button:hover {
+    color: var(--white-col);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+a.nav-item {
+    color: white;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+h1.hero {
+    margin-top: 12rem;
+    color: var(--white-col);
+    font-weight: 900;
+    font-size: clamp(2rem, 4.5vw, 8rem);
+    font-family: 'Fraunces', serif;
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.7rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.header.background {
+    background-size: cover;
+    background-position: center;
+    background-image: url(../images/desktop/image-header.jpg);
+}
+
+.header-arrow {
+    max-width: 4rem;
+    margin-top: 6rem;
+    align-self: center;
+    animation: arrow infinite 1.75s;
+}
+
+@keyframes arrow {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+}
