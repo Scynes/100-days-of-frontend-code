@@ -39,6 +39,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/7/tip-splitter)
      * Purpose: An application to solve those instances of calculating how to split a large tip between a large group!
      * Thoughts: Awesome practive for DOM manipulation and event listeners to dynamically change the display.
+  8. **Order Summary Component**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/8/order-summary-component)
+     * Purpose: A simple and clear order summary before proceeding to a potentail payment portal!
+     * Thoughts: Sometimes simple is the best approach to making a visaully clean design.
 
 ## Goal
 ___
