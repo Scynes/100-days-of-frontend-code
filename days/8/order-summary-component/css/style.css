@@ -94,6 +94,97 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: var(--primary-blue-col) url(../images/pattern-background-desktop.svg) no-repeat;
+    background-position: top;
+    background-size: cover 50%;
+}
+
+button {
+    cursor: pointer;
+    width: 100%;
+    min-height: 4rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+button.primary {
+    color: var(--very-pale-blue);
+    background-color: var(--secondary-bright-blue);
+}
+
+button.primary:hover {
+    opacity: 0.7;
+}
+
+button.secondary {
+    color: var(--desaturated-blue);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+button.secondary:hover {
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
 p {
     font-size: 1.6rem;
+    color: var(--desaturated-blue);
+}
+
+p.plan {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+.order-summary-container {
+    overflow: hidden;
+    height: clamp(40rem, 100%, 60rem);
+    width: clamp(20rem, 100%, 40rem);
+    border-radius: 1rem;
+    background-color: var(--white-col);
+}
+
+.order-summary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.order-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-plan {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--very-pale-blue);
+}
+
+.placeholder {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.placeholder a {
+    font-size: 1.25rem;
 }
