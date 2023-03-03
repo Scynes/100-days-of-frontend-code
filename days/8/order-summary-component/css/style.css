@@ -115,7 +115,7 @@ button {
 }
 
 button.primary {
-    box-shadow: 0 3rem 2rem black;
+    box-shadow: 0 2rem .75rem var(--primary-blue-col);
     color: var(--very-pale-blue);
     background-color: var(--secondary-bright-blue);
 }
@@ -188,4 +188,11 @@ h1 {
 
 .placeholder a {
     font-size: 1.25rem;
+}
+
+@media (max-width: 400px) {
+
+    body {
+        padding: 2rem;
+    }
 }
