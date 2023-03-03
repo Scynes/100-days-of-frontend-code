@@ -115,6 +115,7 @@ button {
 }
 
 button.primary {
+    box-shadow: 0 3rem 2rem black;
     color: var(--very-pale-blue);
     background-color: var(--secondary-bright-blue);
 }
