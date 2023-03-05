@@ -111,7 +111,7 @@ body {
 h1 {
     color: var(--gray);
     font-weight: 300;
-    font-size: clamp(3.75rem, 4.5vw, 4.25rem);
+    font-size: clamp(2.5rem, 4.5vw, 4.25rem);
 }
 
 h1 span {
@@ -163,9 +163,28 @@ input[type="button"] {
 
 .image {
     flex: 1;
-    width: clamp(30rem, 100%, 50%);
+    margin: 3rem 0;
     background-image: url(../images/illustration-dashboard.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 3rem;
+    }
+
+    input {
+        width: 100% !important;
+    }
+
+    .image {
+        margin: 0;
+    }
+
+    .notify div {
+        flex-direction: column;
+    }
 }
