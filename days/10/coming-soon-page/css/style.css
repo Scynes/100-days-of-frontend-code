@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* ------------- *
+ *   CSS Reset   *
+ * ------------- */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ---------- *
+ *   GLOBAL   *
+ * ---------- */
+:root {
+    /* main colors */
+    --primary-blue: hsl(223, 87%, 63%);
+    --secondary-pale-blue: hsl(223, 100%, 88%);
+    --secondary-light-red: hsl(354, 100%, 66%);
+    /* other colors */
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    --white-col: white;
+}
+
+/* ----------- *
+ *   UTILITY   *
+ * ----------- */
+.height-full {
+    height: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.outlineless {
+    outline: none;
+}
+
+/* -------- *
+ *   FLEX   *
+ * -------- */
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.grow-1 {
+    flex-grow: 1;
+}
+
+.flex.align-space-between {
+    align-items: space-between;
+}
+
+/* -------- *
+ *   GRID   *
+ * -------- */
+.grid {
+    display: grid;
+}
+
+/* --------------- *
+ *   FLEX / GRID   *
+ * --------------- */
+.align-center:is(.flex, .grid) {
+    align-items: center;
+}
+
+.justify-center:is(.flex, .grid) {
+    justify-content: center;
+}
+
+/* --------------- *
+ *   APPLICATION   *
+ * --------------- */
+body {
+    font-size: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
