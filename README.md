@@ -47,7 +47,7 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/9/company-landing-page)
      * Purpose: Build a full out landing page for a mock company. Introduct a friendly design with clear clean navigation and item representation.
      * Thoughts: This was a really fun build. A lot to do with simple design approaches, but overall I had a blast.
-  10. **Coming Soon Page**
+10. **Coming Soon Page**
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/10/coming-soon-page)
      * Purpose: Build a landing page for a mock company that's 'coming soon'
      * Thoughts: Something quick to test speed of designing a placeholder webpage.
