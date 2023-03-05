@@ -90,10 +90,82 @@ html, body {
     justify-content: center;
 }
 
+.gap-med {
+    gap: 2rem;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
-body {
-    font-size: 2rem;
+* {
     font-family: 'Libre Franklin', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    font-size: 2rem;
+}
+
+h1 {
+    color: var(--gray);
+    font-weight: 300;
+    font-size: clamp(3.75rem, 4.5vw, 4.25rem);
+}
+
+h1 span {
+    font-weight: 700;
+    color: black;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+
+input[type="email"] {
+    min-height: 4rem;
+    width: clamp(15rem, 100%, 40rem);
+    border-radius: 3rem;
+    padding-left: 2rem;
+    border: 1px solid var(--gray);
+}
+
+input[type="button"] {
+    min-height: 4rem;
+    width: clamp(5rem, 100%, 15rem);
+    border-radius: 3rem;
+    font-weight: 600;
+    color: var(--white-col);
+    background-color: var(--primary-blue);
+    box-shadow: 0 1rem 1.5rem var(--secondary-pale-blue);
+}
+
+.header {
+    margin: 5rem auto 3rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.image {
+    flex: 1;
+    width: clamp(30rem, 100%, 50%);
+    background-image: url(../images/illustration-dashboard.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
