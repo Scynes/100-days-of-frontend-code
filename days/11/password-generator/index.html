@@ -23,13 +23,32 @@
                         <p>Character Length</p>
                         <p class="length">0</p>
                     </div>
-                    <input type="range" name="length-slider" id="length-slider">
-                    <input type="checkbox" name="" id="">
+                    <input type="range" name="" class="length-slider" min="5" max="20">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="uppercase" class="checkbox" id="uppercase">
+                        <label for="uppercase" class="checkbox-label"></label>
+                        <label for="uppercase" class="">Include Uppercase Letters</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="lowercase" class="checkbox" id="lowercase">
+                        <label for="lowercase" class="checkbox-label"></label>
+                        <label for="lowercase" class="">Include Lowercase Letters</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="numbers" class="checkbox" id="numbers">
+                        <label for="numbers" class="checkbox-label"></label>
+                        <label for="numbers" class="">Include Numbers</label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" name="symbols" class="checkbox" id="symbols">
+                        <label for="symbols" class="checkbox-label"></label>
+                        <label for="symbols" class="">Include Symbols</label>
+                    </div>
                     <div class="password-strength">
                         <p>STRENGTH</p>
                         <p>[][][][]</p>
                     </div>
-                    <input type="button" value="GENERATE" id="generate-button">
+                    <input type="button" value="GENERATE" class="generate-button">
                 </form>
             </section>
         </main>
