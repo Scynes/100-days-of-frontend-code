@@ -51,6 +51,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/10/coming-soon-page)
      * Purpose: Build a landing page for a mock company that's 'coming soon'
      * Thoughts: Something quick to test speed of designing a placeholder webpage.
+11. **Password Generator**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/11/password-generator)
+     * Purpose: Build a responsive application that can generate a random password based on given input.
+     * Thoughts: Great practice for figuring out DOM solutions with JavaScript and no framework.
 
 ## Goal
 ___
