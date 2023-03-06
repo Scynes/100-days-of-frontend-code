@@ -75,6 +75,10 @@ html, body {
     justify-content: space-between;
 }
 
+.gap-med {
+    gap: 0.7rem;
+}
+
 /* -------- *
  *   GRID   *
  * -------- */
@@ -163,8 +167,8 @@ label {
 }
 
 .password-strength, .generate-button {
-    min-height: 5rem;
-    padding: 2rem 2.25rem;
+    min-height: 6rem;
+    padding: 0 2.25rem;
     border-radius: 0.5rem;
 }
 
@@ -191,6 +195,7 @@ label {
 }
 
 .length-slider::-webkit-slider-thumb {
+    cursor: pointer;
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -221,6 +226,12 @@ input[type="checkbox"] {
 .checkbox:checked + .checkbox-label::before {
     color: var(--dark-gray);
     background-color: var(--ecto-green);
+}
+
+.strength {
+    width: 1rem;
+    height: 3rem;
+    border: 2px solid var(--ecto-green);
 }
 
 .fa-clipboard {
