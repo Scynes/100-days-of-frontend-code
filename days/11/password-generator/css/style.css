@@ -121,6 +121,10 @@ label {
     color: var(--desaturated-ecto-green);
 }
 
+label:hover {
+    color: var(--ecto-green);
+}
+
 .content-container {
     display: flex;
     flex-direction: column;
@@ -213,7 +217,15 @@ label {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+    border: 2px solid var(--dark-gray);
     background-color: var(--ecto-green);
+    box-shadow: 0 0 1rem var(--ecto-green);
+    transition: 0.3s;
+}
+
+.length-slider::-webkit-slider-thumb:active {
+    transform: scale(0.7);
+    box-shadow: 0 0 1rem 0.5rem var(--dark-gray);
 }
 
 input[type="checkbox"] {
