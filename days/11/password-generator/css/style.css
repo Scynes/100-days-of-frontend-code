@@ -21,7 +21,7 @@ html, body {
  * ---------- */
 :root {
     /* main colors */
-    --dark-gray: #201A1A;
+    --dark-gray: #1c1a1a;
     --grayish-blue: #34354a;
     --grayish-blue-desaturated: #4c4d60;
     --grayish-blue-dark: #2b2930;
@@ -105,6 +105,7 @@ html, body {
 body {
     display: grid;
     place-items: center;
+    padding: 2rem;
     font-family: 'Roboto Mono', monospace;
     background-color: var(--dark-gray);
 }
@@ -217,7 +218,7 @@ label:hover {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    border: 2px solid var(--dark-gray);
+    border: 3px solid var(--dark-gray);
     background-color: var(--ecto-green);
     box-shadow: 0 0 1rem var(--ecto-green);
     transition: 0.3s;

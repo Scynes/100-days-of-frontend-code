@@ -114,7 +114,7 @@ CLIPBOARD.addEventListener('click', () => {
     
     if ('clipboard' in navigator) {
         navigator.clipboard.writeText(PASSWORD_CONTAINER.textContent).then(() => {
-            console.log('boom!');
+            //console.log('boom!');
         })
     }
 })
