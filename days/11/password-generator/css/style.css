@@ -250,6 +250,17 @@ input[type="checkbox"] {
 }
 
 .fa-clipboard {
+    user-select: none;
+    cursor: pointer;
     font-size: 2.75rem;
     color: var(--ecto-green);
+    transition: 0.25s;
+}
+
+.fa-clipboard:hover {
+    color: var(--white-col);
+}
+
+.fa-clipboard:active {
+    transform: scale(0.8);
 }

@@ -16,8 +16,9 @@ const GENERATE_BUTTON = document.querySelector('.generate-button');
 
 const STRENGTH_CONTAINER = document.querySelector('.strength-container');
 
-let complexity = 1;
+const CLIPBOARD = document.querySelector('.clipboard-wrapper');
 
+let complexity = 1;
 
 const generatePassword = (length, options) => {
 
@@ -107,6 +108,15 @@ GENERATE_BUTTON.addEventListener('click', function() {
 LENGTH_SLIDER.addEventListener('input', event => {
     
     LENGTH.textContent = event.target.value;
+})
+
+CLIPBOARD.addEventListener('click', () => {
+    
+    if ('clipboard' in navigator) {
+        navigator.clipboard.writeText(PASSWORD_CONTAINER.textContent).then(() => {
+            console.log('boom!');
+        })
+    }
 })
 
 UPPERCASE_CHECKBOX.addEventListener('change', updateGenerateButtonState);
