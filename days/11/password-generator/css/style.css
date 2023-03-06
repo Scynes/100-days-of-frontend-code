@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+
 /* ------------- *
  *   CSS Reset   *
  * ------------- */
@@ -18,8 +20,11 @@ html, body {
  *   GLOBAL   *
  * ---------- */
 :root {
-    /* background colors */
-
+    /* main colors */
+    --dark-gray: #201A1A;
+    --grayish-blue: #34354a;
+    --ecto-green: hsl(168, 100%, 39%);
+    --desaturated-dark-gray: #6f6f6f;
     /* other colors */
     --white-col: white;
 }
@@ -66,6 +71,10 @@ html, body {
     align-items: space-between;
 }
 
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
 /* -------- *
  *   GRID   *
  * -------- */
@@ -87,3 +96,80 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--dark-gray);
+}
+
+p {
+    font-size: 1.75rem;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: clamp(20rem, 100%, 45rem);
+}
+
+.content-container > * {
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.content-container > *:not(:first-child) {
+    background-color: var(--grayish-blue);
+}
+
+.title :is(h1) {
+    text-align: center;
+    color: var(--ecto-green);
+    font-size: 2.5rem;
+}
+
+.password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-container :is(p) {
+    font-size: 2.75rem;
+    color: var(--desaturated-dark-gray);
+}
+
+.password-form-container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.password-strength {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--desaturated-dark-gray);
+    background-color: var(--dark-gray);
+}
+
+.password-strength, #generate-button {
+    min-height: 5rem;
+    padding: 2rem 2.25rem;
+    border-radius: 0.5rem;
+}
+
+#generate-button {
+    border: none;
+    background-color: var(--ecto-green);
+}
+
+.fa-clipboard {
+    font-size: 2.75rem;
+    color: var(--ecto-green);
+}
+
+.length {
+    font-size: 3.5rem;
+}
