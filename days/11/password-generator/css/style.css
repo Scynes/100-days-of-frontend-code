@@ -245,6 +245,7 @@ input[type="checkbox"] {
 .strength {
     width: 1rem;
     height: 3rem;
+    border-radius: 6px;
     border: 2px solid var(--ecto-green);
 }
 

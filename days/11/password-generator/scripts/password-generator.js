@@ -14,26 +14,35 @@ const PASSWORD_CONTAINER = document.querySelector('.password-container p');
 
 const GENERATE_BUTTON = document.querySelector('.generate-button');
 
+const STRENGTH_CONTAINER = document.querySelector('.strength-container');
+
+let complexity = 1;
+
 
 const generatePassword = (length, options) => {
 
     let result = '';
     let characters = '';
+    complexity = 1;
 
     if (options.uppercase) {
         characters += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        complexity++;
     }
 
     if (options.lowercase) {
         characters += 'abcdefghijklmnopqrstuvwxyz';
+        complexity++;
     }
 
     if (options.numbers) {
         characters += '0123456789';
+        complexity++;
     }
 
     if (options.symbols) {
         characters += '!@#$%^&*()_+-={}[]\\|;:\'",.<>?/~`';
+        complexity++;
     }
 
 
@@ -45,7 +54,7 @@ const generatePassword = (length, options) => {
     return result;
 }
 
-function updateGenerateButtonState() {
+const updateGenerateButtonState = () => {
 
     const options = [
         UPPERCASE_CHECKBOX.checked,
@@ -57,6 +66,18 @@ function updateGenerateButtonState() {
     const anyOptionSelected = options.some(option => option === true);
     
     GENERATE_BUTTON.disabled = !anyOptionSelected;
+}
+
+const updateStrength = () => {
+
+    Array.from(STRENGTH_CONTAINER.children).forEach(child => {
+        child.style.backgroundColor = '';
+    })
+
+    for (let index = 0; index < complexity; ++index) {
+
+       STRENGTH_CONTAINER.children[index].style.backgroundColor = 'var(--ecto-green)';
+    }
 }
 
 GENERATE_BUTTON.addEventListener('click', function() {
@@ -74,9 +95,12 @@ GENERATE_BUTTON.addEventListener('click', function() {
     // Generate the password
     const PASSWORD = generatePassword(LENGTH, options);
 
-    console.log(options)
+    if (PASSWORD.length < 12) {
+        complexity--;
+    }
 
-    // Set the password container value
+    updateStrength();
+
     PASSWORD_CONTAINER.textContent = PASSWORD;
 });
 
