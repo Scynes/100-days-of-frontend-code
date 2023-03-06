@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
+        <script defer src="./scripts/password-generator.js"></script>
         <script src="https://kit.fontawesome.com/5f24e6bf59.js" crossorigin="anonymous"></script>
         <title>Password Generator</title>
     </head>
@@ -21,9 +22,9 @@
                 <form action="#">
                     <div class="password-length-container flex align-center justify-space-between">
                         <p>Character Length</p>
-                        <p class="length">0</p>
+                        <p class="length">5</p>
                     </div>
-                    <input type="range" name="" class="length-slider" min="5" max="20">
+                    <input type="range" name="" class="length-slider" min="5" max="20" value="5">
                     <div class="checkbox-wrapper">
                         <input type="checkbox" name="uppercase" class="checkbox" id="uppercase">
                         <label for="uppercase" class="checkbox-label"></label>
@@ -54,7 +55,7 @@
                             <div class="strength"></div>
                         </div>
                     </div>
-                    <input type="button" value="GENERATE" class="generate-button">
+                    <input type="button" value="GENERATE" class="generate-button" disabled>
                 </form>
             </section>
         </main>

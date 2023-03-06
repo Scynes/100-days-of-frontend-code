@@ -24,7 +24,7 @@ html, body {
     --dark-gray: #201A1A;
     --grayish-blue: #34354a;
     --grayish-blue-desaturated: #4c4d60;
-    --grayish-blue-dark: #000000;
+    --grayish-blue-dark: #2b2930;
     --ecto-green: hsl(168, 100%, 39%);
     --desaturated-ecto-green: hsl(169, 33%, 43%);
     /* other colors */
@@ -134,9 +134,7 @@ label {
 }
 
 .content-container > *:not(:first-child) {
-    border-bottom: 0.75rem solid var(--grayish-blue-dark);
-    border-right: 0.55rem solid var(--grayish-blue-desaturated);
-    border-left: -2rem solid rgba(0, 0, 0, 0);
+    box-shadow: 0.15rem 0.15rem 0.5rem black;
     background-color: var(--grayish-blue);
 }
 
@@ -179,7 +177,18 @@ label {
 
 .generate-button {
     border: none;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
     background-color: var(--ecto-green);
+    transition: 0.3s;
+}
+
+.generate-button:not(:disabled):hover {
+    cursor: pointer;
+    color: var(--ecto-green);
+    background-color: var(--dark-gray);
 }
 
 .length {
