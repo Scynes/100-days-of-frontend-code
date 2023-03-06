@@ -4,9 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
         <title>Password Generator</title>
     </head>
     <body>
-        
+        <main class="content-container">
+            <section class="title">
+                <h1>Password Generator</h1>
+            </section>
+            <section class="password-container">
+                <input type="text" name="password" id="password">
+            </section>
+            <section class="password-form-container">
+                <form action="#">
+                    <div class="password-length-container">
+                        <p>Character Length</p>
+                        <p>0</p>
+                    </div>
+                    <input type="range" name="length-slider" id="length-slider">
+                    <input type="checkbox" name="" id="">
+                    <div class="password-strength">
+                        <p>STRENGTH</p>
+                        <p>[][][][]</p>
+                    </div>
+                    <input type="button" value="GENERATE" id="generate-button">
+                </form>
+            </section>
+        </main>
     </body>
 </html>
