@@ -91,6 +91,12 @@ html, body {
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
+h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    font-family: 'Source Code Pro', monospace;
+}
+
 body {
     display: grid;
     place-items: center;
@@ -106,7 +112,9 @@ body {
 }
 
 h1.time {
-    font-size: 6rem;
+    font-size: 8rem;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .selection-container {
@@ -142,8 +150,10 @@ h1.time {
 
 .inner-timer-container {
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 26rem;
     min-height: 26rem;
     border-radius: 50%;
@@ -152,6 +162,14 @@ h1.time {
 
 .progress-ring {
     position: absolute;
+}
+
+p.time {
+    font-size: 1.75rem;
+    letter-spacing: 0.5rem;
+    padding-top: 3rem;
+    font-weight: 300;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .progress-ring__circle {
@@ -164,5 +182,21 @@ h1.time {
     stroke-dashoffset: calc(422 - (422 * var(--progress) / 100));
     transform: rotate(-90deg);
     transform-origin: center;
-  }
+}
+
+.settings {
+    user-select: none;
+    cursor: pointer;
+    font-size: 3rem;
+    color: rgb(103, 103, 178);
+    transition: 0.25s;
+}
+
+.settings:hover {
+    opacity: 0.5;
+}
+
+.settings:active {
+    transform: scale(1.4);
+}
   
