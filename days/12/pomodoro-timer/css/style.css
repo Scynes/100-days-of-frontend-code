@@ -19,10 +19,9 @@ html, body {
  * ---------- */
 :root {
     /* background colors */
-    --dark-purple-blue: rgb(31, 23, 66);
-    --darker-purple-blue: rgb(14, 9, 34);
-    --desaturated-darker-purple-blue: rgb(17, 11, 42);
-    --light-purple-blue: rgb(81, 70, 124);
+    --dark-purple-blue: rgba(19, 15, 42, 0.994);
+    --darker-purple-blue: rgb(20, 14, 47);
+    --light-purple-blue: rgb(77, 60, 145);
     /* other colors */
     --white-col: white;
 }
@@ -103,10 +102,12 @@ body {
     min-height: 30rem;
     border-radius: 50%;
     color: white;
-    background: linear-gradient(bottom to top, var(--darker-purple-blue), var(--light-purple-blue));
+    box-shadow: -2rem -2rem 10rem var(--light-purple-blue), 3rem 3rem 4rem var(--darker-purple-blue);
+    background: linear-gradient(0.40turn, var(--darker-purple-blue) 30%, var(--light-purple-blue));
 }
 
 .inner-timer-container {
+    position: relative;
     display: grid;
     place-items: center;
     min-width: 26rem;
@@ -114,3 +115,19 @@ body {
     border-radius: 50%;
     background-color: var(--darker-purple-blue);
 }
+
+.progress-ring {
+    position: absolute;
+}
+
+.progress-ring__circle {
+    --progress: 100;
+    fill: transparent;
+    stroke: #2196F3;
+    stroke-width: 5;
+    stroke-dasharray: 422;
+    stroke-dashoffset: calc(422 - (422 * var(--progress) / 100));
+    transform: rotate(-90deg);
+    transform-origin: center;
+  }
+  
