@@ -199,4 +199,11 @@ p.time {
 .settings:active {
     transform: scale(1.4);
 }
-  
+ 
+.settings-modal {
+    position: fixed;
+    width: clamp(20rem, 100%, 40rem);
+    height: clamp(20rem, 100%, 40rem);
+    border-radius: 2rem;
+    background-color: var(--white-col);
+}
