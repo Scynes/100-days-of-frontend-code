@@ -1,0 +1,116 @@
+/* ------------- *
+ *   CSS Reset   *
+ * ------------- */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ---------- *
+ *   GLOBAL   *
+ * ---------- */
+:root {
+    /* background colors */
+    --dark-purple-blue: rgb(31, 23, 66);
+    --darker-purple-blue: rgb(14, 9, 34);
+    --desaturated-darker-purple-blue: rgb(17, 11, 42);
+    --light-purple-blue: rgb(81, 70, 124);
+    /* other colors */
+    --white-col: white;
+}
+
+/* ----------- *
+ *   UTILITY   *
+ * ----------- */
+.height-full {
+    height: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.outlineless {
+    outline: none;
+}
+
+/* -------- *
+ *   FLEX   *
+ * -------- */
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.grow-1 {
+    flex-grow: 1;
+}
+
+.flex.align-space-between {
+    align-items: space-between;
+}
+
+/* -------- *
+ *   GRID   *
+ * -------- */
+.grid {
+    display: grid;
+}
+
+/* --------------- *
+ *   FLEX / GRID   *
+ * --------------- */
+.align-center:is(.flex, .grid) {
+    align-items: center;
+}
+
+.justify-center:is(.flex, .grid) {
+    justify-content: center;
+}
+
+/* --------------- *
+ *   APPLICATION   *
+ * --------------- */
+body {
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-purple-blue);
+}
+
+.outer-timer-container {
+    display: grid;
+    place-items: center;
+    min-width: 30rem;
+    min-height: 30rem;
+    border-radius: 50%;
+    color: white;
+    background: linear-gradient(bottom to top, var(--darker-purple-blue), var(--light-purple-blue));
+}
+
+.inner-timer-container {
+    display: grid;
+    place-items: center;
+    min-width: 26rem;
+    min-height: 26rem;
+    border-radius: 50%;
+    background-color: var(--darker-purple-blue);
+}
