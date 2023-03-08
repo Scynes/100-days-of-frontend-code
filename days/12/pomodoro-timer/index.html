@@ -8,13 +8,28 @@
         <title>Card Carousel</title>
     </head>
     <body>
-        <div class="outer-timer-container">
-            <div class="inner-timer-container">
-                <svg class="progress-ring" viewBox="-10 -10 140 140">
-                    <circle class="progress-ring__circle" cx="80" cy="60" r="67" stroke-width="10" />
-                </svg>
-                <h1></h1>
+        <div class="content-container">
+            <h1>Pomodoro</h1>
+            <div class="selection-container">
+                <div class="selection active">
+                    <h2 class="text-center">pomodoro</h2>
+                </div>
+                <div class="selection">
+                    <h2 class="text-center">short break</h2>
+                </div>
+                <div class="selection">
+                    <h2 class="text-center">long break</h2>
+                </div>
             </div>
-        </div>  
+            <div class="outer-timer-container">
+                <div class="inner-timer-container">
+                    <svg class="progress-ring" viewBox="-10 -10 140 140">
+                        <circle class="progress-ring__circle" cx="80" cy="60" r="67" stroke-width="10" />
+                    </svg>
+                    <h1 class="time">0:00</h1>
+                    <p class="time">PAUSE</p>
+                </div>
+            </div> 
+        </div> 
     </body>
 </html>
