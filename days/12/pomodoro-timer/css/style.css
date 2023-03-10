@@ -277,4 +277,14 @@ p.time {
     font-family: 'Source Code Pro', monospace;
     color: var(--white-col);
     background-color: rgb(255, 102, 102);
+    transition: 0.2s;
+}
+
+.button-wrapper > button:hover {
+    cursor: pointer;
+    background-color: rgb(246, 132, 132);
+}
+
+.button-wrapper > button:active {
+    transform: scale(.9);
 }
