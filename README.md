@@ -55,6 +55,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/11/password-generator)
      * Purpose: Build a responsive application that can generate a random password based on given input.
      * Thoughts: Great practice for figuring out DOM solutions with JavaScript and no framework.
+12. **Pomodoro Timer**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/12/pomodoro-timer)
+     * Purpose: Build a pomodoro timer to monitor and time tasks.
+     * Thoughts: Fun use of javascript time manipulation and starting/stopping/pausing tasks.
 
 ## Goal
 ___
