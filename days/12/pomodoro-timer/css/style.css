@@ -70,6 +70,10 @@ html, body {
     align-items: space-between;
 }
 
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
 /* -------- *
  *   GRID   *
  * -------- */
@@ -144,6 +148,7 @@ h1.time {
     height: 30rem;
     border-radius: 50%;
     color: white;
+    border: 0.5rem solid rgb(49, 21, 93);
     box-shadow: -2rem -2rem 10rem var(--light-purple-blue), 3rem 3rem 4rem var(--darker-purple-blue);
     background: linear-gradient(0.40turn, var(--darker-purple-blue) 30%, var(--light-purple-blue));
 }
@@ -199,11 +204,45 @@ p.time {
 .settings:active {
     transform: scale(1.4);
 }
- 
-.settings-modal {
-    position: fixed;
+
+.settings-modal-container {
+    position: absolute;
     width: clamp(20rem, 100%, 40rem);
     height: clamp(20rem, 100%, 40rem);
+}
+ 
+.settings-modal {
+    position: relative;
+    display: block;
+    color: black;
+    height: 100%;
     border-radius: 2rem;
     background-color: var(--white-col);
+    padding: 3rem;
+}
+
+.settings-modal > h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 4.5vw, 2.75rem);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+    width: 100%;
+}
+
+.button-wrapper > button {
+    min-height: 5rem;
+    min-width: 13rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+    color: var(--white-col);
+    background-color: rgb(255, 102, 102);
 }
