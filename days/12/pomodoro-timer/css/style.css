@@ -132,7 +132,7 @@ label {
 }
 
 h1.time {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 400;
     font-family: 'Source Code Pro', monospace;
 }
@@ -185,16 +185,33 @@ h1.time {
     position: absolute;
 }
 
-p.time {
+p.timer-option {
+    user-select: none;
+    position: relative;
     font-size: 1.75rem;
     letter-spacing: 0.5rem;
     padding-top: 3rem;
     font-weight: 300;
     font-family: 'Source Code Pro', monospace;
+    transition: 0.25s;
+}
+
+.pause {
+    display: none;
+}
+
+p.timer-option:hover {
+    cursor: pointer;
+    color: rgb(196, 144, 196);
+    transform: scale(1.2);
+}
+
+p.timer-option:active {
+    transform: scale(0.9);
 }
 
 .progress-ring__circle {
-    --progress: 10;
+    --progress: 0;
     fill: transparent;
     stroke: #2196F3;
     stroke-width: 5;
