@@ -36,11 +36,25 @@
             </div>
         </div>
         <div class="settings-modal-container">
-            <div class="settings-modal">
+            <div class="settings-modal width-full">
                 <h1>Settings</h1>
                 <hr>
-                <div class="flex justify-space-between">
-                    
+                <div class="options">
+                    <h2>TIME (MINUTES)</h2>
+                    <div class="option-group flex justify-space-between width-full">
+                        <div>
+                            <label for="pomodoro">pomodoro</label>
+                            <input type="number" name="pomodoro" id="pomodoro" value="25">
+                        </div>
+                        <div>
+                            <label for="short-break">short break</label>
+                            <input type="number" name="short-break" id="short-break" value="5">
+                        </div>
+                        <div>
+                            <label for="">long break</label>
+                            <input type="number" name="long-break" id="long-break" value="15">
+                        </div>
+                    </div>
                 </div>
                 <div class="button-wrapper">
                     <button>Apply</button>

@@ -108,6 +108,22 @@ body {
     background-color: var(--dark-purple-blue);
 }
 
+input[type="number"] {
+    padding-left: 1.25rem;
+    height: 3rem;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bolder;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: gray;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    display: block;
+}
+
 .content-container {
     display: flex;
     flex-direction: column;
@@ -222,8 +238,24 @@ p.time {
 }
 
 .settings-modal > h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: clamp(2rem, 4.5vw, 2.75rem);
+}
+
+.options {
+    margin-top: 2rem;
+}
+
+.options > h2 {
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.option-group {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .button-wrapper {
