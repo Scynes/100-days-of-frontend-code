@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <script src="https://kit.fontawesome.com/5f24e6bf59.js" crossorigin="anonymous"></script>
+        <script defer src="./scripts/settings.js"></script>
         <title>Card Carousel</title>
     </head>
     <body>
@@ -31,7 +32,7 @@
                     <p class="time">PAUSE</p>
                 </div>
             </div>
-            <div class="settings">
+            <div class="settings" onclick="openSettings()">
                 <i class="fa-solid fa-gear"></i>
             </div>
         </div>
@@ -57,7 +58,7 @@
                     </div>
                 </div>
                 <div class="button-wrapper">
-                    <button>Apply</button>
+                    <button onclick="applySettings()">Apply</button>
                 </div>
             </div>
         </div>

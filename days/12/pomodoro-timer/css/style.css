@@ -222,6 +222,7 @@ p.time {
 }
 
 .settings-modal-container {
+    display: none;
     position: absolute;
     width: clamp(20rem, 100%, 40rem);
     height: clamp(20rem, 100%, 40rem);
