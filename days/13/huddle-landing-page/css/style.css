@@ -95,10 +95,25 @@ body {
     padding: 2rem 3rem;
     grid-template-rows: auto 1fr auto;
     font-family: 'Open Sans', sans-serif;
+    color: var(--white-col);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 4.5vw, 4rem);
+    font-weight: 600;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Poppins', sans-serif;
+}
+
+section > img {
+    width: 100%;
+}
+
+p {
+    font-size: 2rem;
+    max-width: 57rem;
 }
 
 .background {
@@ -109,6 +124,12 @@ h1, h2, h3, h4, h5 {
 
 .main-container {
     display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content {
+    flex: 1 1 50%;
 }
 
 .footer-container {
@@ -118,8 +139,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .icon-wrapper {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     display: grid;
     place-items: center;
     border-radius: 50%;
