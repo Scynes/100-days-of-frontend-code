@@ -59,6 +59,10 @@ To view my progress and completed projects, simply click on the "View 100 Projec
      * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/12/pomodoro-timer)
      * Purpose: Build a pomodoro timer to monitor and time tasks.
      * Thoughts: Fun use of javascript time manipulation and starting/stopping/pausing tasks.
+13. **Huddle Landing Page**
+     * [Project Demo](https://scynes.github.io/100-days-of-frontend-code/days/13/huddle-landing-page)
+     * Purpose: A landing page for promoting a mock huddle group.
+     * Thoughts: Practice for layouts.
 
 ## Goal
 ___
