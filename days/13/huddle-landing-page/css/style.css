@@ -110,3 +110,19 @@ h1, h2, h3, h4, h5 {
 .main-container {
     display: flex;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.icon-wrapper {
+    width: 5rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--white-col);
+    border: 2px solid;
+}
