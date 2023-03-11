@@ -91,9 +91,22 @@ html, body {
  *   APPLICATION   *
  * --------------- */
 body {
+    display: grid;
+    padding: 2rem 3rem;
+    grid-template-rows: auto 1fr auto;
     font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    background: var(--violet-col) url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-container {
+    display: flex;
 }
