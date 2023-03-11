@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* ------------- *
+ *   CSS Reset   *
+ * ------------- */
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* ---------- *
+ *   GLOBAL   *
+ * ---------- */
+:root {
+    /* main colors */
+    --violet-col: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    /* other colors */
+    --white-col: white;
+}
+
+/* ----------- *
+ *   UTILITY   *
+ * ----------- */
+.height-full {
+    height: 100%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.outlineless {
+    outline: none;
+}
+
+/* -------- *
+ *   FLEX   *
+ * -------- */
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.grow-1 {
+    flex-grow: 1;
+}
+
+.flex.align-space-between {
+    align-items: space-between;
+}
+
+/* -------- *
+ *   GRID   *
+ * -------- */
+.grid {
+    display: grid;
+}
+
+/* --------------- *
+ *   FLEX / GRID   *
+ * --------------- */
+.align-center:is(.flex, .grid) {
+    align-items: center;
+}
+
+.justify-center:is(.flex, .grid) {
+    justify-content: center;
+}
+
+/* --------------- *
+ *   APPLICATION   *
+ * --------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+}
