@@ -6,6 +6,7 @@
 *, *::before, *::after {
     margin: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -39,27 +40,27 @@ html, body {
  *   UTILITY   *
  * ----------- */
 .bg-col-light-red-work {
-    background-color: var(--light-red-work);
+    background-color: var(--light-red-work) !important;
 }
 
 .bg-col-light-red-study {
-    background-color: var(--light-red-study);
+    background-color: var(--light-red-study) !important;
 }
 
 .bg-col-lime-green {
-    background-color: var(--lime-green);
+    background-color: var(--lime-green) !important;
 }
 
 .bg-col-soft-blue {
-    background-color: var(--soft-blue);
+    background-color: var(--soft-blue) !important;
 }
 
 .bg-col-soft-orange {
-    background-color: var(--soft-orange);
+    background-color: var(--soft-orange) !important;
 }
 
 .bg-col-violet {
-    background-color: var(--violet);
+    background-color: var(--violet) !important;
 }
 
 .height-full {
@@ -166,7 +167,7 @@ p {
 .profile {
     height: 70%;
     border-radius: 1rem;
-    background-color: rgb(0, 72, 253);
+    background-color: rgb(110, 39, 242);
 }
 
 .timeframe {
@@ -196,8 +197,8 @@ p {
 
 .dashboard-card {
     width: 20rem;
-    overflow: hidden;
     border-radius: 1rem;
+    background-color: var(--dark-blue);
 }
 
 .dashboard-card-tab {
@@ -207,6 +208,15 @@ p {
     height: 20%;
     overflow: hidden;
 }
+
+.dashboard-card-info {
+    height: 80%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    background-color: var(--dark-blue);
+}  
 
 .tab-image {
     width: 6rem;
