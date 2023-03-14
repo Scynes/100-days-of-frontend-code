@@ -73,6 +73,10 @@ html, body {
     flex-grow: 1;
 }
 
+.flex.justify-space-between {
+    justify-content: space-between;
+}
+
 .flex.align-space-between {
     align-items: space-between;
 }
@@ -95,16 +99,23 @@ html, body {
     justify-content: center;
 }
 
+.gap-med {
+    gap: 3rem;
+}
+
 /* --------------- *
  *   APPLICATION   *
  * --------------- */
 body {
     display: grid;
     place-items: center;
-    font-size: 1.8rem;
     font-family: 'Rubik', sans-serif;
     color: var(--white-col);
     background-color: var(--very-dark-blue);
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 .avatar {
@@ -121,15 +132,50 @@ body {
 
 .dashboard-profile-card {
     grid-row: span 2;
+    min-height: 40rem;
 }
 
-.profile > h1 {
+.profile, .timeframe {
+    padding: 2.5rem;
+}
+
+.profile {
+    height: 70%;
+    border-radius: 1.5rem;
+    background-color: rgb(0, 72, 253);
+}
+
+.timeframe {
+    height: 30%;
+    color: var(--desaturated-blue);
+}
+
+.option {
+    user-select: none;
+    transition: 0.25s;
+}
+
+.option:hover {
+    cursor: pointer;
+    color: var(--white-col);
+    transform: scale(1.1);
+}
+
+.option:active {
+    transform: scale(0.95);
+}
+
+.profile > section > h1 {
     font-weight: 300;
+    font-size: 3rem;
+}
+
+.dashboard-card:not(:first-child) {
+    padding: 2.5rem;
 }
 
 .dashboard-card {
-    width: clamp(10rem, 100%, 20rem);
-    padding: 2.5rem;
+    width: 20rem;
     border-radius: 1.5rem;
     background-color: var(--dark-blue);
 }
