@@ -32,7 +32,7 @@ html, body {
     --dark-blue: hsl(235, 46%, 20%);
     --pale-blue: hsl(236, 100%, 87%);
     --desaturated-blue: hsl(235, 45%, 61%);
-    --very-dark-blue: hsl(226, 43%, 10%);
+    --very-dark-blue: hsl(226, 41%, 10%);
 }
 
 /* ----------- *
@@ -103,18 +103,33 @@ body {
     place-items: center;
     font-size: 1.8rem;
     font-family: 'Rubik', sans-serif;
+    color: var(--white-col);
     background-color: var(--very-dark-blue);
+}
+
+.avatar {
+    max-width: 7rem;
+    border: 2px solid;
+    border-radius: 50%;
 }
 
 .dashboard-container {
     display: grid;
+    gap: 2.5rem;
     grid-template: repeat(2, auto) / repeat(4, auto);
 }
 
-.dashboard-profile {
-    
+.dashboard-profile-card {
+    grid-row: span 2;
+}
+
+.profile > h1 {
+    font-weight: 300;
 }
 
 .dashboard-card {
-
+    width: clamp(10rem, 100%, 20rem);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--dark-blue);
 }
