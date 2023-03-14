@@ -38,6 +38,30 @@ html, body {
 /* ----------- *
  *   UTILITY   *
  * ----------- */
+.bg-col-light-red-work {
+    background-color: var(--light-red-work);
+}
+
+.bg-col-light-red-study {
+    background-color: var(--light-red-study);
+}
+
+.bg-col-lime-green {
+    background-color: var(--lime-green);
+}
+
+.bg-col-soft-blue {
+    background-color: var(--soft-blue);
+}
+
+.bg-col-soft-orange {
+    background-color: var(--soft-orange);
+}
+
+.bg-col-violet {
+    background-color: var(--violet);
+}
+
 .height-full {
     height: 100%;
 }
@@ -141,7 +165,7 @@ p {
 
 .profile {
     height: 70%;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     background-color: rgb(0, 72, 253);
 }
 
@@ -170,12 +194,23 @@ p {
     font-size: 3rem;
 }
 
-.dashboard-card:not(:first-child) {
-    padding: 2.5rem;
-}
-
 .dashboard-card {
     width: 20rem;
-    border-radius: 1.5rem;
-    background-color: var(--dark-blue);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.dashboard-card-tab {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 20%;
+    overflow: hidden;
+}
+
+.tab-image {
+    width: 6rem;
+    right: 1.5rem;
+    top: -8px;
+    position: absolute;
 }
