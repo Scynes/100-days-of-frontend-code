@@ -171,6 +171,22 @@ p {
     background-color: rgb(110, 39, 242);
 }
 
+.dots {
+    user-select: none;
+    letter-spacing: 0.4rem !important;
+    transition: 0.25s;
+}
+
+.dots:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.info-stats h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+}
+
 .timeframe {
     height: 30%;
     color: var(--desaturated-blue);
@@ -211,6 +227,9 @@ p {
 }
 
 .dashboard-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 80%;
     padding: 1.5rem;
     border-top-right-radius: 1rem;
@@ -248,6 +267,16 @@ p {
     .dashboard-card {
         width: 100%;
         height: 20rem;
+    }
+
+    .info-stats {
+        display: grid;
+        place-items: center;
+    }
+
+    .profile > section > h1 {
+        font-weight: 300;
+        font-size: 4rem;
     }
 
 }
